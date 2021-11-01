@@ -1,5 +1,5 @@
-
-
+import { connect } from "react-redux"
+import { setInfo } from "../redux/actions/main"
 
 const IndexPage = ({ logo }) => {
   
@@ -8,8 +8,11 @@ const IndexPage = ({ logo }) => {
     <header className="App-header">
       <img src={'./logo.svg'} className="App-logo" alt="logo" />
       <p>
-        Edit <code>src/App.js</code> and save to reload.
+        This app is completely set up with TailWind, Redux, Redis, Express and Nextjs.
       </p>
+      <p>
+        It is an all in one server and react rendering app for optimized seo alongside large app productions.
+        </p>
       <a
         className="App-link"
         href="https://reactjs.org"
@@ -22,4 +25,13 @@ const IndexPage = ({ logo }) => {
   </div>
 )};
 
-export default IndexPage;
+
+const mapStateToProps = state => {
+  return { name: state.main.name }
+ }
+ 
+ const mapDispatchToProps = {
+   setInfo
+ }
+ 
+ export default connect(mapStateToProps, mapDispatchToProps)(IndexPage)

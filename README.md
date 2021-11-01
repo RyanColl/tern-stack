@@ -8,9 +8,20 @@
 
 ## Steps
 
-1. Git Clone 
+1. Git Clone https://github.com/RyanColl/terrn-stack.git
 
-1. Add a folder called secrets, then a file called secrets.js
+2. cd terrn-stack
+
+3. npm i
+
+4. Add a folder called secrets, then a file called secrets.js
 ```mkdir secrets``` ```touch secrets.js```
 
-2. 
+5. Go to [Upstash](https://console.upstash.com/) and make an account and create a new database.
+
+Go to your new database and find the string under details that starts with rediss://:
+
+7. in secrets.js add the following code, using the previous string inside the key
+```js
+module.exports = {key: 'rediss://:putyourcodehere'}
+```
