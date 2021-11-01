@@ -8,8 +8,9 @@ const handle = app.getRequestHandler()
 app.prepare()
 .then(() => {
   const server = express()
-    
+  server.use(middleware)
   server.get('*', (req, res) => {
+    
     return handle(req, res)
   })
     
@@ -22,3 +23,9 @@ app.prepare()
   console.error(ex.stack)
   process.exit(1)
 })
+
+
+const middleware = (req, res, next) => {
+    console.log(req.ip)
+    next()
+}

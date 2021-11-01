@@ -7,8 +7,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "autoprefixer": "^10.0.4",
-    "clsx": "^1.1.1",
     "express": "^4.17.1",
     "ioredis": "^4.23.0",
     "next": "latest",
@@ -20,7 +18,6 @@
     "react-redux": "^7.2.6",
     "redux": "^4.1.2",
     "redux-thunk": "^2.4.0",
-    "swr": "^0.5.1",
     "tailwindcss": "^2.0.2",
     "uuid": "^8.3.2"
   },

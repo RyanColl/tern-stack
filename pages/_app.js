@@ -1,24 +1,11 @@
-import '../styles/globals.css'
-import { Toaster } from 'react-hot-toast'
-function MyApp({ Component, pageProps }) {
- 
-  return (
-    <>
-      <Component {...pageProps} />
-      <Toaster
-        position="bottom-right"
-        toastOptions={{
-          style: {
-            margin: '40px',
-            background: '#363636',
-            color: '#fff',
-            zIndex: 1,
-          },
-          duration: 5000,
-        }}
-      />
-    </>
-  )
-}
+import './styles/App.css';
+import { useState } from 'react';
+// keeps state in app
+const CustomApp = ({ Component, pageProps }) => {
 
-export default MyApp
+  return (
+    <Component {...pageProps} />
+  );
+};
+
+export default CustomApp
