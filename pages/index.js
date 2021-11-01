@@ -6,7 +6,7 @@ import toast from 'react-hot-toast'
 import redis from '../lib/redis'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
-
+ 
 function LoadingSpinner({ invert }) {
   return (
     <svg
