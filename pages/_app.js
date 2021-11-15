@@ -1,6 +1,4 @@
 import './styles/App.css';
-import { useState } from 'react';
-import { wrapper } from "../redux/store"
 // keeps state in app
 const CustomApp = ({ Component, pageProps }) => {
 
@@ -9,4 +7,4 @@ const CustomApp = ({ Component, pageProps }) => {
   );
 };
 
-export default wrapper.withRedux(CustomApp);
+export default CustomApp;

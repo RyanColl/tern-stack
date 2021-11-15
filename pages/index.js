@@ -1,5 +1,3 @@
-import { connect } from "react-redux"
-import { setInfo } from "../redux/actions/main"
 
 const IndexPage = ({ logo }) => {
   
@@ -21,17 +19,11 @@ const IndexPage = ({ logo }) => {
       >
         Learn React
       </a>
+      <button onClick={() => console.log('pressed')}>Press ME</button>
     </header>
   </div>
 )};
 
 
-const mapStateToProps = state => {
-  return { name: state.main.name }
- }
- 
- const mapDispatchToProps = {
-   setInfo
- }
- 
- export default connect(mapStateToProps, mapDispatchToProps)(IndexPage)
+
+ export default IndexPage

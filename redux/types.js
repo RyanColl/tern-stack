@@ -1,1 +1,0 @@
-export const FIRST_TYPE_GOES_HERE = "FIRST_TYPE_GOES_HERE"
