@@ -1,10 +1,10 @@
 # TERRN Stack
 
-### T => Tailwind
-### E => Express
-### R => Redux
-### R => Redis
-### N => Nextjs
+#### T => Tailwind
+#### E => Express
+#### R => Redux
+#### R => Redis
+#### N => Nextjs
 
 ## Steps
 
@@ -19,7 +19,7 @@
 
 5. Go to [Upstash](https://console.upstash.com/) and make an account and create a new database.
 
-Go to your new database and find the string under details that starts with rediss://:
+6. Go to your new database and find the string under details that starts with rediss://:
 
 7. in secrets.js add the following code, using the previous string inside the key
 ```js
