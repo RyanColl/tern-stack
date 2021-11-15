@@ -1,8 +1,7 @@
-# TERRN Stack
+# TERN Stack
 
 #### T => Tailwind
 #### E => Express
-#### R => Redux
 #### R => Redis
 #### N => Nextjs
 
